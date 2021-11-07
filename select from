@@ -1,0 +1,11 @@
+select albums_title, year_release from Albums where year_release=2018;
+
+select tracks_title, duration from Tracks where duration between 07:00:00 and 08:00:00;
+
+select tracks_title, duration from Tracks where duration >= 00:03:30;
+
+select collection_title, year_release from Collection where 2018 <= year_release  and year_release <= 2020;
+
+select * from Performers where name_nickname not like '% %';
+
+select tracks_title from Tracks where tracks_title like '%My%';
